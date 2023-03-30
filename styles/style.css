@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff; /* cor de fundo padrão */
+}
+
+body.verde {
+  background-color: #00ff00; /* cor de fundo verde */
+}
+
+
+header{
+  width: 100%;
+  height: 92px;
+  top: 0;
+  background: #CF2B2B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 1;
+}
+
+.header-text{
+  padding: 5px 5px 5px 25px;;
+}
+
+
+header h1{
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  color: white;
+}
+
+header h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+main{
+  padding-top: 127px; /* adjust this value to match your header height */
+  padding-bottom: 100px; /* adjust this value to match your footer height */
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.title{
+  margin: 0 auto 17px 20px;
+}
+
+
+.row{
+  display: flex;
+}
+
+.mainprato{
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  margin-left: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  width: 172px;
+  height: 202px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+
+} 
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* optional: for smooth scrolling on iOS devices */
+}
+
+.carousel-item {
+  flex:  0 auto;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card img{
+  width: 144px;
+  height: 87px;
+}
+
+.card h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.card h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #A6A6A6;
+}
+
+.card p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.price-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-card img{
+  width: 15.44px;
+  height: 15.44px;
+}
+
+ main .title{
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.018em;
+  color: #333333;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+ 
+}
+.footer-button{
+  padding: 15px 25px 16px 25px;
+}
+
+.footer-button button{
+  width: 100%;
+  height: 61px;
+  background: #CBCBCB;
+  border-radius: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.018em;
+  border-style: none;
+}
