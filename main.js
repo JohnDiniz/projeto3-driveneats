@@ -26,9 +26,9 @@ containerCards.forEach((card) => {
 
 
     function enviarMessage(message) {
-      var numeroTelefone = "5511999999999"; // Substitua pelo número de telefone desejado, 
-      var mensagemCodificada = encodeURIComponent(message);
-      var linkWhatsapp = "https://wa.me/" + numeroTelefone + "?text=" + mensagemCodificada;
+      let numeroTelefone = "5511999999999"; // Substitua pelo número de telefone desejado, 
+      let mensagemCodificada = encodeURIComponent(message);
+      let linkWhatsapp = "https://wa.me/" + numeroTelefone + "?text=" + mensagemCodificada;
       window.open(linkWhatsapp); // Abre o link em uma nova aba
     }
 
@@ -39,9 +39,9 @@ containerCards.forEach((card) => {
       });
 
       btnsend.addEventListener('click', () => {
-        var nome = prompt("Qual é o seu nome?");
-        var rua = prompt("Qual é a sua rua?");      
-        var mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$ 27,70\n${nome}\n+${rua}`;
+        let nome = prompt("Qual é o seu nome?");
+        let rua = prompt("Qual é a sua rua?");      
+        const mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: Pudim\nTotal: R$ 27,70\n\nNome:${nome}\nEndereço:+${rua}`;
         enviarMessage(mensagem)
       });
 
